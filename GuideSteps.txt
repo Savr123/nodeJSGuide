@@ -1,0 +1,15 @@
+1 Step: 
+	create http server
+2 Step: 
+	create my own module
+3 Step: 
+	url module
+4 Step: 
+	Node js as File System Module
+		Read files
+		Create files
+		Update files
+		Delete files
+		Rename files
+	a)Read file
+		
