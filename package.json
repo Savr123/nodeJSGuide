@@ -1,12 +1,20 @@
 {
   "name": "nodejspractice",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Savr123/nodeJSGuide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Savr123/nodeJSGuide/issues"
+  },
+  "homepage": "https://github.com/Savr123/nodeJSGuide#readme",
+  "description": ""
 }
