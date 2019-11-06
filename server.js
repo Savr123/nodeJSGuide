@@ -10,8 +10,23 @@ const dt = require('./dateAndTime');
 console.log(dt.myDateTime());
 
 const port = 8080;
+const server = http.createServer();
 
-const server = http.createServer(function (req,res) {
+process.stdin.setEncoding('utf-8');
+process.stdin.on('readable', function(){
+  var input = process.stdin.read();
+
+  if (input !== null){
+    //echo text
+    process.stdout.write(input);
+    var command = input.trim();
+    if (command == 'exit'){
+      process.exit(0);
+    }
+  }
+});
+
+server.on('request', function (req,res) {
   fs.readFile('demo1.html',function (err,data){
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
