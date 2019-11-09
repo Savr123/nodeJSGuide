@@ -37,13 +37,9 @@ process.stdin.on('readable', function(){
 
 
 
-<<<<<<< HEAD
-server.on('request', function (req,res) {
-=======
 const server = http.createServer();
 
 server.on('request',function (req,res) {
->>>>>>> 46bcc91bcbc9cd26c52ebce219e4d6baf55f2f0a
   fs.readFile('demo1.html',function (err,data){
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
