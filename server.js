@@ -1,3 +1,5 @@
+"use strict";
+
 const http = require('http');
 const https = require('https');
 const url = require('url');
@@ -12,6 +14,13 @@ console.log(dt.myDateTime());
 const port = 8080;
 const server = http.createServer();
 
+// buffer example
+let buf = new Buffer('This is my pretty example');
+let json = JSON.stringify(buf);
+
+let buf2 = new Buffer(JSON.parse(json).data);
+console.log(buf2.toString());
+
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function(){
   var input = process.stdin.read();
@@ -25,6 +34,8 @@ process.stdin.on('readable', function(){
     }
   }
 });
+
+
 
 server.on('request', function (req,res) {
   fs.readFile('demo1.html',function (err,data){
