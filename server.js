@@ -68,7 +68,6 @@ process.stdin.on('readable', function(){
 
 
 
-const server = http.createServer();
 
 server.on('request',function (req,res) {
   fs.readFile('demo1.html',function (err,data){
