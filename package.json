@@ -16,5 +16,8 @@
     "url": "https://github.com/Savr123/nodeJSGuide/issues"
   },
   "homepage": "https://github.com/Savr123/nodeJSGuide#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "events": "^3.0.0"
+  }
 }
